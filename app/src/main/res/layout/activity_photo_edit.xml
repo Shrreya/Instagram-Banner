@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.shrreya.instagrambanner.activities.PhotoEditActivity">
+
+    <!-- Top bar -->
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentTop="true">
+
+        <!-- Custom back button -->
+        <ImageButton
+            android:id="@+id/back_to_main_activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:background="@drawable/round_white"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <!-- Rotate button -->
+        <ImageButton
+            android:id="@+id/rotate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rotate_black_24dp"
+            android:background="@drawable/round_white"
+            android:padding="10dp"
+            android:layout_centerInParent="true"/>
+
+        <!-- Grid button -->
+        <ImageButton
+            android:id="@+id/grid_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_grid_black_24dp"
+            android:background="@drawable/round_white"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <!-- Photo view -->
+    <RelativeLayout
+        android:id="@+id/photo_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+
+    <!-- Flexible grid view -->
+    <RelativeLayout
+        android:id="@+id/flexible_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/photo_view"/>
+
+    <!-- Bottom bar -->
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true">
+
+        <!-- Go to upload activity button -->
+        <ImageButton
+            android:id="@+id/go_to_upload_activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_go_black_24dp"
+            android:background="@drawable/round_white"
+            android:padding="10dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Instagram Banner</string>
+    <string name="permission_denied">Permissions required for this app have been denied!</string>
+    <string name="camera_hardware_unavailable">Camera hardware is unavailable!</string>
+    <string name="instagram_msg">TAP EACH IN THE FOLLOWING ORDER TO SHARE ON INSTAGRAM</string>
+    <string name="start_over">START OVER</string>
+    <string name="instagram_error_msg">Instagram is not installed on this device!</string>
+    <string name="flash_hardware_unavailable">Flash light hardware is unavailable!</string>
+    <string name="creating_grid">Creating Instagram Banner.</string>
+</resources>

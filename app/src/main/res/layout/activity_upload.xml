@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.shrreya.instagrambanner.activities.UploadActivity">
+
+    <!-- Instagram message bar -->
+    <RelativeLayout
+        android:id="@+id/instagram_msg_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentTop="true">
+
+        <!-- Instagram message -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instagram_msg"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <!-- Photo grid view-->
+    <GridView
+        android:id="@+id/photo_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:clickable="true"
+        android:layout_centerInParent="true"/>
+
+    <!-- Final grid lines -->
+    <RelativeLayout
+        android:id="@+id/final_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/photo_grid_view"/>
+
+    <!-- Start over bar -->
+    <RelativeLayout
+        android:id="@+id/start_over_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true">
+
+        <!-- Start over button -->
+        <Button
+            android:id="@+id/start_over_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_over"
+            android:textColor="@color/white"
+            android:background="@drawable/button_border"
+            android:padding="10dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

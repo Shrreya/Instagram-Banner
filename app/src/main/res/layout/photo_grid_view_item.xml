@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- Photo grid item image -->
+    <ImageView
+        android:id="@+id/photo_grid_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Photo grid item number -->
+    <TextView
+        android:id="@+id/photo_grid_item_number"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:background="@drawable/round_primary"
+        android:gravity="center"/>
+
+</RelativeLayout>
